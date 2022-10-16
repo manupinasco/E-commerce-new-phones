@@ -21,7 +21,7 @@ app.listen(PORT, () => {
 
 
 app.get('/', async function (req, res) {
-    response.send("Hola")
+    res.status(201).json('hola')
 })
 
 
