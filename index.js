@@ -29,7 +29,7 @@ app.get('/', async function (req, res) {
 /* -----------PAY------------- */
 /* --------------------------- */
 
-app.get('/payment', async function (req, res) {
+app.post('/payment', async function (req, res) {
 
     let link
     link = await PaymentInstance.getPaymentLink(req, res)
